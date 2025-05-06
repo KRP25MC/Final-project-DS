@@ -1,127 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Page</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-        }
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Main Page</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
 
-        .body h1 {
-            font-family: monospace;
-        }
+            .body h1 {
+                font-family: monospace;
+            }
 
-        .topnav {
-            overflow: hidden;
-            background-color: #274f2e;
-        }
+            .topnav {
+                overflow: hidden;
+                background-color: #274f2e;
+            }
 
-        .topnav a {
-            float: right;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-        }
+            .topnav a {
+                float: right;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
 
-        .topnav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
+            .topnav a:hover {
+                background-color: #ddd;
+                color: black;
+            }
 
-        .title {
-            color: white;
-            float: left;
-        }
+            .title {
+                color: white;
+                float: left;
+            }
 
-        .img {
-            width: 100px; 
-            height: 100px;
-            float: left;
-        }
+            .tpimg {
+                width: 100px; 
+                height: 100px;
+                float: left;
+            }
 
-        .recipe-container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            padding: 20px;
-            gap: 20px;
-        }
+            .recipe-container {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                padding: 20px;
+                gap: 30px;
+            }
 
-        .chicken, .patatoes, .sushi {
-            width: 300px; /* Controls how wide each box is */
-            border: 1px solid #000000;
-            border-radius: 4px;
-            transition: all 0.3s ease;
-            box-sizing: border-box;
-        }
+            .chicken, .patatoes, .sushi, .lasagna, .pizza, .burger {
+                width: 600px;
+                border: 1px solid #000000;
+                border-radius: 6px;
+                transition: all 0.3s ease;
+                box-sizing: border-box;
+            }
 
-        .ah {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 15px;
-            text-decoration: none;
-            color: inherit;
-        }
+            .ah {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+                text-decoration: none;
+                color: inherit;
+            }
 
-        .ah img {
-            width: 100%;
-            height: auto;
-            border-radius: 4px;
-            margin-bottom: 10px;
-        }
+            .ah img {
+                width: 100%;
+                height: auto;
+                border-radius: 4px;
+                margin-bottom: 15px;
+            }
 
+            .text-block {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
 
-        .text-block {
-            display: flex;
-            flex-direction: column;
-        }
-    </style>
-</head>
-<body>
-    <div class="topnav">
-        <img class="img" src="COOKING IS FUN.png" alt="">
-        <h2 class="title">COOKING IS FUN</h2>
-        <a href="main page.html">Home</a>
-        <a href="login.html">Log In</a>
-        <a href="about">About</a>
-    </div>
-    <div class="recipe-container">
-        <div class="chicken">
-            <a class="ah" href="chicken.html">
-                <img src="food1.jpeg" alt="Roast Chicken">
-                <div class="text-block">
-                    <h1>Roast Chicken</h1>
-                    <p>You can make a delicious and succulent roast chicken in an air fryer, in little over an hour. Here, the bird sits upside down for half of the cooking time so the breast is kept moist. The skin crisps up perfectly for a lovely golden finish, too.</p>
-                </div>
-            </a>
+            .text-block h1 {
+                font-size: 24px;
+                margin: 10px 0;
+            }
+
+            .text-block p {
+                font-size: 16px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="topnav">
+            <img class="tpimg" src="COOKING IS FUN.png" alt="">
+            <h2 class="title">COOKING IS FUN</h2>
+            <a href="main page.html">Home</a>
+            <a href="login.html">Log In</a>
+            <a href="about">About</a>
         </div>
-    
-        <div class="patatoes">
-            <a class="ah" href="patatoes.html">
-                <img src="food4.jpg" alt="Parmentier Potatoes">
-                <div class="text-block">
-                    <h1>Parmentier potatoes</h1>
-                    <p>Serve parmentier potatoes instead of chips or roasties for a more elegant side. This is a classic dish flavoured with rosemary and garlic, and it's easy to make.</p>
-                </div>
-            </a>
+        <div class="recipe-container">
+            <div class="chicken">
+                <a class="ah" href="chicken.html">
+                    <img src="chicken.jpeg" alt="Roast Chicken">
+                    <div class="text-block">
+                        <h1>Roast Chicken</h1>
+                        <p>You can make a delicious and succulent roast chicken in an air fryer, in little over an hour. The bird sits upside down for half of the cooking time so the breast stays moist and the skin crisps up for a golden finish.</p>
+                    </div>
+                </a>
+            </div>
+        
+            <div class="patatoes">
+                <a class="ah" href="patatoes.html">
+                    <img src="patato.jpg" alt="Parmentier Potatoes">
+                    <div class="text-block">
+                        <h1>Parmentier Potatoes</h1>
+                        <p>Serve parmentier potatoes instead of chips or roasties for a more elegant side. A classic dish flavoured with rosemary and garlic that's easy to make.</p>
+                    </div>
+                </a>
+            </div>
+        
+            <div class="sushi">
+                <a class="ah" href="sushi.html">
+                    <img src="sushi.jpg" alt="Sushi">
+                    <div class="text-block">
+                        <h1>Sushi</h1>
+                        <p>Fancy making sushi at home? This simple recipe makes 32 healthy little bites—perfect for lunch or served as canapés.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="lasagna">
+                <a class="ah" href="lasanga.html">
+                    <img src="lasanga.jpg" alt="Lasagna Bolognese">
+                    <div class="text-block">
+                        <h1>Lasagna Bolognese</h1>
+                        <p>If you’re looking for the best classic Lasagna Bolognese Recipe straight from Italy, this is the recipe for you. It is loaded with perfectly cooked lasagna pasta, homemade Bolognese and béchamel sauce, mozzarella, and Parmigiano-Reggiano cheeses for an unforgettable classic Italian lasagna recipe!</p>
+                    </div>
+                </a>
+            </div>
+        
+            <div class="pizza">
+                <a class="ah" href="pizza.html">
+                    <img src="pizza.jpg" alt="pizza">
+                    <div class="text-block">
+                        <h1>Pepperoni Pizza</h1>
+                        <p>This pepperoni pizza recipe uses tomato sauce and oregano on a prebaked crust and is topped with cheese and pepperoni. Try this easy pizza recipe for a delicious weeknight dinner anytime.</p>
+                    </div>
+                </a>
+            </div>
+        
+            <div class="burger">
+                <a class="ah" href="burger.html">
+                    <img src="burger.jpg" alt="burger">
+                    <div class="text-block">
+                        <h1>Cheeseburger</h1>
+                        <p>This is a great recipe Classic Smashed Cheeseburger , had fun making it over the weekend. Good quality and fresh.</p>
+                    </div>
+                </a>
+            </div>
         </div>
-    
-        <div class="sushi">
-            <a class="ah" href="sushi">
-                <img src="food5.jpg" alt="Sushi">
-                <div class="text-block">
-                    <h1>Sushi</h1>
-                    <p>Fancy making sushi at home? This simple recipe makes 32 healthy little bites, ideal for lunch or served as canapés.</p>
-                </div>
-            </a>
-        </div>
-    </div>
-</body>
+    </body>
 </html>
