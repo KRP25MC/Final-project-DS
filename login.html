@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGxvZ298ZW58MHx8fHwxNjg3NTY5NzA1&ixlib=rb-4.0.3&q=80&w=1080');
+            background-image: url('https://koa.com/blog/images/campfire-pancake.jpg?preset=heroimagecropped');
             background-size: cover;
             background-position: center;
             display: flex;
@@ -18,7 +18,7 @@
         }
 
         .login-container {
-            background: #ffffff;
+            background: rgba(255, 255, 255, 0.5);
             padding: 20px 30px;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -69,18 +69,18 @@
 </head>
 <body>
     <div class="login-container">
-    
-        <div class="us_pass">
-            <label for="username">Username</label>
-            <input type="text" id="username" name="username" required>
-        </div>
-        <div class="us_pass">
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" required>
-        </div>
+        <form method="post">
+            <div class="us_pass" >
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="us_pass">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+        </form>
         <a href="main page.html"><button type="submit" class="btn">Login</button></a>
         <p style="text-align: center; margin-top: 10px;">Don't have an account? <a href="https://youtu.be/xvFZjo5PgG0?si=exU6dmKq27avHULq">Register</a></p>
-        
     </div>
 </body>
 </html>
