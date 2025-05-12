@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Parmentier Potatoes</title>
+        <title>Lasanga</title>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
         <style>
             .topnav {
@@ -48,20 +48,22 @@
             } 
 
             .recipiet {
-                align-items: center;
                 padding: 20px;
+                overflow: hidden;
             }
 
             .recipeimg {
-                float: right;
-                width: 40%;
-                height: auto;
-                border-radius: 4px;
-                margin-bottom: 20px;
+                position: absolute;
+                top:140px;
+                right:25px;
+                width: 600px;
+                height: 600px;
+                border-radius: 20px;
             }
 
             .recipe {
                 float: left;
+                width: 55%;
             }
 
             .ah {
@@ -69,8 +71,24 @@
                 color: #fffcfc;
                 background: rgba(255, 255, 255, 0.5);
                 border-radius: 8px;
-                padding: 10px;
-                margin: 10px;
+                padding: 20px;
+                margin: 20px 0;
+
+            }
+
+            .tips-box{
+                float: right;
+                width: 40%;
+                margin-top: 640px;
+            }
+
+            @media screen and (max-width: 768px) {
+                .recipeimg,
+                .recipe,
+                .tips-box {
+                    float: none;
+                    width: 100%;
+                }
             }
         </style>
     </head>
@@ -119,14 +137,14 @@
                         <li>Let the lasagna rest for 10 minutes before serving.</li>
                     </ol>
                 </div>
-                <div class="ah">
-                    <h2>Cooking Tips:</h2>
-                    <ul>
-                        <li>Use fresh herbs for a more vibrant flavor.</li>
-                        <li>Let the lasagna rest before cutting to ensure clean slices.</li>
-                        <li>Pair with a fresh green salad and garlic bread for a complete meal.</li>
-                    </ul>
-                </div>
+            </div>
+            <div class="tips-box ah">
+                <h2>Cooking Tips:</h2>
+                <ul>
+                    <li>Use fresh herbs for a more vibrant flavor.</li>
+                    <li>Let the lasagna rest before cutting to ensure clean slices.</li>
+                    <li>Pair with a fresh green salad and garlic bread for a complete meal.</li>
+                </ul>
             </div> 
         </div>
     </body>

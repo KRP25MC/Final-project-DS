@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Chicken</title>
+        <title>Burger</title>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
         <style>
             .topnav {
@@ -48,30 +48,48 @@
             } 
 
             .recipiet {
-                align-items: center;
-                padding: 20px;
-            }
+            padding: 20px;
+            overflow: hidden;
+        }
 
-            .recipeimg {
-                float: right;
-                width: 40%;
-                height: auto;
-                border-radius: 4px;
-                margin-bottom: 20px;
-            }
+        .recipeimg {
+            position: absolute;
+            top:140px;
+            right:25px;
+            width: 690px;
+            height: 600px;
+            border-radius: 20px;
+        }
 
-            .recipe {
-                float: left;
-            }
+        .recipe {
+            float: left;
+            width: 55%;
+        }
 
-            .ah {
-                border: 3px solid #fffcfc;
-                color: #fffcfc;
-                background: rgba(255, 255, 255, 0.5);
-                border-radius: 8px;
-                padding: 10px;
-                margin: 10px;
+        .ah {
+            border: 3px solid #fffcfc;
+            color: #fffcfc;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+
+        }
+
+        .tips-box{
+            float: right;
+            width: 40%;
+            margin-top: 640px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .recipeimg,
+            .recipe,
+            .tips-box {
+                float: none;
+                width: 100%;
             }
+        }
         </style>
     </head>
     <body>
@@ -113,15 +131,15 @@
                         <li>Serve immediately and enjoy!</li>
                     </ol>
                 </div>
-                <div class="ah">
-                    <h2>Cooking Tips:</h2>
-                    <ul>
-                        <li>Use a heavy spatula to smash the burgers for the best crispy edges.</li>
-                        <li>Do not press down on the burgers after flipping to retain their juiciness.</li>
-                        <li>Customize your toppings to suit your taste preferences.</li>
-                    </ul>
-                </div>
-            </div> 
+            </div>
+            <div class="tips-box ah">
+                <h2>Cooking Tips:</h2>
+                <ul>
+                    <li>Use a high-fat content ground beef for juicier burgers.</li>
+                    <li>Do not press down on the patties while cooking to keep them juicy.</li>
+                    <li>Experiment with different cheeses and toppings for variety.</li>
+                </ul>
+            </div>
         </div>
     </body>
 </html>

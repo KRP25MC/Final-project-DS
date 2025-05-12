@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Chicken</title>
+        <title>Pizza</title>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
         <style>
             .topnav {
@@ -48,30 +48,48 @@
             } 
 
             .recipiet {
-                align-items: center;
-                padding: 20px;
-            }
+            padding: 20px;
+            overflow: hidden;
+        }
 
-            .recipeimg {
-                float: right;
-                width: 40%;
-                height: auto;
-                border-radius: 4px;
-                margin-bottom: 20px;
-            }
+        .recipeimg {
+            position: absolute;
+            top:140px;
+            right:25px;
+            width: 600px;
+            height: 600px;
+            border-radius: 20px;
+        }
 
-            .recipe {
-                float: left;
-            }
+        .recipe {
+            float: left;
+            width: 55%;
+        }
 
-            .ah {
-                border: 3px solid #fffcfc;
-                color: #fffcfc;
-                background: rgba(255, 255, 255, 0.5);
-                border-radius: 8px;
-                padding: 10px;
-                margin: 10px;
+        .ah {
+            border: 3px solid #fffcfc;
+            color: #fffcfc;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+
+        }
+
+        .tips-boxs {     
+            float: right;
+            width: 40%;
+            margin-top: 640px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .recipeimg,
+            .recipe,
+            .tips-box {
+                float: none;
+                width: 100%;
             }
+        }
         </style>
     </head>
     <body>
@@ -113,15 +131,15 @@
                         <li>Remove from the oven, let cool slightly, slice, and serve.</li>
                     </ol>
                 </div>
-                <div class="ah">
-                    <h2>Cooking Tips:</h2>
-                    <ul>
-                        <li>For a crispier crust, bake the pizza directly on a pizza stone or oven rack.</li>
-                        <li>Add your favorite toppings like mushrooms, bell peppers, or olives for variety.</li>
-                        <li>Use fresh mozzarella for a creamier texture.</li>
-                    </ul>
-                </div>
             </div> 
+            <div class="tips-box ah">
+                <h2>Cooking Tips:</h2>
+                <ul>
+                    <li>For a crispier crust, pre-bake the crust for 5 minutes before adding toppings.</li>
+                    <li>Experiment with different toppings like bell peppers, mushrooms, or olives.</li>
+                    <li>Use fresh herbs for added flavor.</li>
+                </ul>
+            </div>
         </div>
     </body>
 </html>
