@@ -48,20 +48,23 @@
             } 
 
             .recipiet {
-                align-items: center;
                 padding: 20px;
+                overflow: hidden;
             }
 
             .recipeimg {
-                float: right;
-                width: 40%;
-                height: auto;
-                border-radius: 4px;
-                margin-bottom: 20px;
+                position: absolute;
+                top:140px;
+                right:25px;
+                width: 600px;
+                height: 600px;
+                border-radius: 20px;
             }
+
 
             .recipe {
                 float: left;
+                width: 55%;
             }
 
             .ah {
@@ -69,8 +72,24 @@
                 color: #fffcfc;
                 background: rgba(255, 255, 255, 0.5);
                 border-radius: 8px;
-                padding: 10px;
-                margin: 10px;
+                padding: 20px;
+                margin: 20px 0;
+
+            }
+
+            .tips-box{
+                float: right;
+                width: 40%;
+                margin-top: 640px;
+            }
+
+            @media screen and (max-width: 768px) {
+                .recipeimg,
+                .recipe,
+                .tips-box {
+                    float: none;
+                    width: 100%;
+                }
             }
         </style>
     </head>
@@ -111,14 +130,14 @@
                         <li>Serve hot as a side dish.</li>
                     </ol>
                 </div>
-                <div class="ah">
-                    <h2>Cooking Tips:</h2>
-                    <ul>
-                        <li>For extra crispiness, let the potatoes dry completely after boiling before roasting.</li>
-                        <li>Use fresh rosemary for the best flavor.</li>
-                        <li>Pair with roasted meats or grilled vegetables for a complete meal.</li>
-                    </ul>
-                </div>
+            </div>
+            <div class="tips-box ah">
+                <h2>Cooking Tips:</h2>
+                <ul>
+                    <li>For extra crispiness, let the potatoes dry completely after boiling before roasting.</li>
+                    <li>Use fresh rosemary for the best flavor.</li>
+                    <li>Pair with roasted meats or grilled vegetables for a complete meal.</li>
+                </ul>
             </div> 
         </div>
     </body>
