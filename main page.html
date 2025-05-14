@@ -1,170 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Main Page</title>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-        <style>
-            body {
-                margin: 0;
-                font-family: Arial, Helvetica, sans-serif;
-                background: #8c4f0a;
-            }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://koa.com/blog/images/campfire-pancake.jpg?preset=heroimagecropped');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            transition: background-image 1s ease-in-out;
+        }
 
-            .body h1 {
-                font-family: monospace;
-            }
+        .login-container {
+            background: rgba(255, 255, 255, 0.5);
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
 
-            .topnav {
-                overflow: hidden;
-                background-color: #274f2e;
-            }
+        .us_pass {
+            margin-bottom: 15px;
+        }
 
-            .topnav a {
-                float: right;
-                color: #f2f2f2;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-                font-size: 17px;
-                border-radius: 10px;
-            }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
 
-            .topnav a:hover {
-                background-color: #ddd;
-                color: black;
-            }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
 
-            .title {
-                color: white;
-                float: left;
-            }
+        input[type="text"]:focus, input[type="password"]:focus {
+            border-color: #007bff;
+            outline: none;
+        }
 
-            .tpimg {
-                width: 67px; 
-                height: 67px;
-                float: left;
-            }
+        .btn {
+            display: inline-block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+        }
 
-            .recipe-container {
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-                padding: 20px;
-                gap: 30px;
-            }
-
-            .chicken, .patatoes, .sushi, .lasagna, .pizza, .burger {
-                width: 600px;
-                border: 3px solid #fffcfc;
-                color: #fffcfc;
-                background: rgba(255, 255, 255, 0.5);
-                border-radius: 8px;
-                transition: all 0.3s ease;
-                box-sizing: border-box;
-            }
-
-            .ah {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                padding: 20px;
-                text-decoration: none;
-                color: inherit;
-            }
-
-            .ah img {
-                width: 554px;
-                height: 554px;
-                border-radius: 4px;
-                margin-bottom: 15px;
-            }
-
-            .text-block {
-                display: flex;
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .text-block h1 {
-                font-size: 24px;
-                margin: 10px 0;
-            }
-
-            .text-block p {
-                font-size: 16px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="topnav">
-            <img class="tpimg" src="COOKING IS FUN.png" alt="">
-            <h2 class="title">COOKING IS FUN</h2>
-            <a href="main page.html">Home</a>
-            <a href="login.html">Log In</a>
-            <a href="about.html">About</a>
-        </div>
-        <div class="recipe-container">
-            <div class="chicken">
-                <a class="ah" href="chicken.html">
-                    <img src="chicken2.jpg" alt="Roast Chicken">
-                    <div class="text-block">
-                        <h1>Roast Chicken</h1>
-                        <p>You can make a delicious and succulent roast chicken in an air fryer, in little over an hour. The bird sits upside down for half of the cooking time so the breast stays moist and the skin crisps up for a golden finish.</p>
-                    </div>
-                </a>
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <form method="post">
+            <div class="us_pass">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
             </div>
-        
-            <div class="patatoes">
-                <a class="ah" href="patatoes.html">
-                    <img src="patato.jpg" alt="Parmentier Potatoes">
-                    <div class="text-block">
-                        <h1>Parmentier Potatoes</h1>
-                        <p>Serve parmentier potatoes instead of chips or roasties for a more elegant side. A classic dish flavoured with rosemary and garlic that's easy to make.</p>
-                    </div>
-                </a>
+            <div class="us_pass">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
             </div>
-        
-            <div class="sushi">
-                <a class="ah" href="sushi.html">
-                    <img src="sushi.jpg" alt="Sushi">
-                    <div class="text-block">
-                        <h1>Sushi</h1>
-                        <p>Fancy making sushi at home? This simple recipe makes 32 healthy little bites—perfect for lunch or served as canapés.</p>
-                    </div>
-                </a>
-            </div>
+        </form>
+        <a href="main page.html"><button type="submit" class="btn">Login</button></a>
+        <p style="text-align: center; margin-top: 10px;">Don't have an account? <a href="https://youtu.be/xvFZjo5PgG0?si=exU6dmKq27avHULq">Register</a></p>
+    </div>
 
-            <div class="lasagna">
-                <a class="ah" href="lasanga.html">
-                    <img src="lasanga.jpg" alt="Lasagna Bolognese">
-                    <div class="text-block">
-                        <h1>Lasagna Bolognese</h1>
-                        <p>If you’re looking for the best classic Lasagna Bolognese Recipe straight from Italy, this is the recipe for you. It is loaded with perfectly cooked lasagna pasta, homemade Bolognese and béchamel sauce, mozzarella, and Parmigiano-Reggiano cheeses for an unforgettable classic Italian lasagna recipe!</p>
-                    </div>
-                </a>
-            </div>
-        
-            <div class="pizza">
-                <a class="ah" href="pizza.html">
-                    <img src="pizza.jpg" alt="pizza">
-                    <div class="text-block">
-                        <h1>Pepperoni Pizza</h1>
-                        <p>This pepperoni pizza recipe uses tomato sauce and oregano on a prebaked crust and is topped with cheese and pepperoni. Try this easy pizza recipe for a delicious weeknight dinner anytime.</p>
-                    </div>
-                </a>
-            </div>
-        
-            <div class="burger">
-                <a class="ah" href="burger.html">
-                    <img src="burger.jpg" alt="burger">
-                    <div class="text-block">
-                        <h1>Cheeseburger</h1>
-                        <p>This is a great recipe Classic Smashed Cheeseburger , had fun making it over the weekend. Good quality and fresh.</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </body>
+    <script>
+        const images = [
+            'https://koa.com/blog/images/campfire-pancake.jpg?preset=heroimagecropped',
+            'https://www.google.com/url?sa=i&url=https%3A%2F%2Fgreatbigphotographyworld.com%2Fbest-food-photographers%2F&psig=AOvVaw03jX-_khCEcYPFX4bh6-oc&ust=1747326690435000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCNCJ06qxo40DFQAAAAAdAAAAABAE',
+            'https://lh4.googleusercontent.com/proxy/4abtV6wylh-xK38vtgYD6Xw7Xg-zC-L7_RSM5kJbUvquPwN3dClI9psvcO4-CEXXnvoPWPJOEUW9d2SHhlEson-_jC4lIxylsOuwPKCNZAIradcyc2wYAmFjpuiWxjOBYEuZo6Dz5sbsV3jZTqumwmh2E3McRJNyqA',
+            'https://cdn.pixabay.com/photo/2015/12/01/20/28/forest-1072828_1280.jpg',
+            'https://cdn.pixabay.com/photo/2017/01/20/00/30/tent-1994268_1280.jpg'
+        ];
+
+
+        let index = 0;
+
+        setInterval(() => {
+            index = (index + 1) % images.length;
+            document.body.style.backgroundImage = `url('${images[index]}')`;
+        }, 5000); // every 5 seconds
+    </script>
+</body>
 </html>
